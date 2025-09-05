@@ -14,6 +14,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84e986fc207b34840b9c216312227783,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 84e986fc207b34840b9c216312227783,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 84e986fc207b34840b9c216312227783,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 84e986fc207b34840b9c216312227783,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -62,6 +77,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 84e986fc207b34840b9c216312227783,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7657966619581158213, guid: 84e986fc207b34840b9c216312227783,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -5477749408508380018, guid: 84e986fc207b34840b9c216312227783,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -77,10 +102,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1200856079203341021, guid: 84e986fc207b34840b9c216312227783,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 84e986fc207b34840b9c216312227783,
         type: 3}
       propertyPath: m_Name
       value: aviTest Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082271958561512970, guid: 84e986fc207b34840b9c216312227783,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84e986fc207b34840b9c216312227783, type: 3}
@@ -123,7 +158,7 @@ MonoBehaviour:
     climbIdle: {fileID: 0}
     climbUp: {fileID: 0}
     climbEndTop: {fileID: 0}
-  characterControllerHeight: 1.8
+  characterControllerHeight: 0.5
   characterControllerRadius: 0.28
   ragdollJoints: []
   ragdollColliders: []
