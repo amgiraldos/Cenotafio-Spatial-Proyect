@@ -17,7 +17,7 @@ public class OrbitWords : MonoBehaviour
     [Header("Aparición")]
     public float appearDelay = 0.3f;
     public float appearDuration = 0.5f;
-    public AudioClip notificationGlitch;
+   
 
     private List<Transform> _items = new List<Transform>();
     private float _baseAngle;
@@ -97,14 +97,8 @@ public class OrbitWords : MonoBehaviour
                 Material mat = new Material(rend.material);
                 mat.color = new Color(mat.color.r, mat.color.g, mat.color.b, 0f);
                 rend.material = mat;
-
-                AudioSource audio = item.gameObject.AddComponent<AudioSource>();
-                audio.clip = notificationGlitch;
-                audio.playOnAwake = false;
-                audio.spatialBlend = 1f;
-
                 StartCoroutine(FadeInMaterialAlpha(mat, appearDuration));
-                audio.Play();
+             
             }
             yield return new WaitForSeconds(appearDelay);
         }

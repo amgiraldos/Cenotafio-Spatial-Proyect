@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class CuboColor
 {
-    public MeshRenderer renderer;
+    public Renderer renderer;
 }
 
 [System.Serializable]
