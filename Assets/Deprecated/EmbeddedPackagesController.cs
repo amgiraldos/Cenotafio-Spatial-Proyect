@@ -14,7 +14,7 @@ namespace SpatialSys.Samples.EmbeddedPackages
         readonly string avatarID = "1";
         readonly string animationID = "2";
         readonly string attachmentID = "3";
-        readonly string prefabObjectID = "4";
+        //readonly string prefabObjectID = "4";
 
         private void Awake()
         {
