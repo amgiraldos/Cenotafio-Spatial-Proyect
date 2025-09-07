@@ -76,7 +76,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: musicVolume
+  m_Name: music
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: dbf28966fa8ef844d82599a233395f1f
   m_Children: []
@@ -95,7 +95,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: dialogueVolume
+  m_Name: dialogue
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: a6ba6f32c3d7e794c93f8110bcc24ea4
   m_Children: []
@@ -114,7 +114,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ambienceVolume
+  m_Name: ambience
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 2034f2d87e965d44692981a3c23bae6a
   m_Children: []
@@ -142,7 +142,21 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 467eb07f076a8514980744a2c15b0e94
+    name: masterVolume
+  - guid: 0270a99addce5f8458d90455ef040b1d
+    name: ambienceVolume
+  - guid: 395ada91e20e02042991afbb3d8dccbe
+    name: dialogueVolume
+  - guid: 61a769fbb721b04448869827f965b057
+    name: interfaceVolume
+  - guid: 9a246a8ffb35f66458cac87211d37468
+    name: masterVolume
+  - guid: 702fbfceb6c4a4e488257f4b580fb515
+    name: musicVolume
+  - guid: cabd2e6f7e7c3c446b5cf45741daef20
+    name: soundEffectsVolume
   m_AudioMixerGroupViews:
   - guids:
     - f902f3c3caec5d649b4f0f160252b1d5
@@ -225,7 +239,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: soundEffectsVolume
+  m_Name: soundEffects
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 609387fef247271468e83fde0a00112b
   m_Children: []
@@ -244,7 +258,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: interfaceVolume
+  m_Name: interface
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 0d9628ffedd47e44abe2e1e548995eb2
   m_Children: []
@@ -263,7 +277,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: masterVolume
+  m_Name: master
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 59db5eef4d9bfaf4582f9e6534da18b1
   m_Children: []
