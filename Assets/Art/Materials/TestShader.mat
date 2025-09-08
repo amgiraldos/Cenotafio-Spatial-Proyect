@@ -79,7 +79,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 608b756f74b9b2d46a2816d08be66bb1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4e865ddd3bf87744baf041697b1e1e48, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -166,7 +166,7 @@ Material:
     - _DstBlend: 0
     - _EmissionPower: 3
     - _EnvironmentReflections: 1
-    - _FPS: 10
+    - _FPS: 6.53
     - _FresnelPower: 1
     - _GlossMapScale: 0
     - _Glossiness: 0

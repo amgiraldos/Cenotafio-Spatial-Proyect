@@ -32,6 +32,7 @@ public class AnimController : MonoBehaviour
 
     private AudioSource audioSource2;    // El AudioSource que crearemos en runtime
     private bool eventTriggered = false;
+    private List<GameObject> lastChangedCubes = new List<GameObject>();
 
     void Start()
     {
@@ -69,6 +70,17 @@ public class AnimController : MonoBehaviour
         }
     }
 
+    private void MoveCubesDown(float distance)
+    {
+        foreach (var go in lastChangedCubes)
+        {
+            if (go != null)
+            {
+                Vector3 pos = go.transform.position;
+                go.transform.position = new Vector3(pos.x, pos.y - distance, pos.z);
+            }
+        }
+    }
     private void HandleAudioVolume()
     {
         Debug.Log("Entrando a HandleAudioVolume");
@@ -101,6 +113,8 @@ public class AnimController : MonoBehaviour
             Debug.Log("Volumen llegó a 1.0, desactivando GO");
             if (objectToDeactivate != null)
                 objectToDeactivate.SetActive(false);
+            
+            MoveCubesDown(10f); 
         }
     }
 }
