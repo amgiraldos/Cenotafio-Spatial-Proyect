@@ -1,12 +1,11 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class LikeCounterUI : MonoBehaviour
 {
-    public Text likeText; // Arrastra aquí el objeto LikeText
+    public TMP_Text likeText; // Arrastra aquí el objeto TMP_Text
     private int likeCount = 0;
 
-    // Controla los modos de suma
     private bool enableClick = false;
     private bool enableF = false;
 
@@ -23,28 +22,24 @@ public class LikeCounterUI : MonoBehaviour
         }
     }
 
-    // Método para triggers 1 y 2
     public void AddLike()
     {
         likeCount++;
         UpdateLikeText();
     }
 
-    // Trigger 3: habilita suma por click, desactiva suma por F
     public void EnableClickLike()
     {
         enableClick = true;
         enableF = false;
     }
 
-    // Trigger 4: deshabilita suma por click, habilita suma por F
     public void EnableFLike()
     {
         enableClick = false;
         enableF = true;
     }
 
-    // Trigger 5: resetea contador y desactiva ambos modos
     public void ResetLikes()
     {
         likeCount = 0;
